@@ -5,6 +5,7 @@ import ArcadeMachineView from '../views/CraftsView/ArcadeMachineView.vue'
 import CraftsView from '../views/CraftsView/CraftsView.vue'
 import HomeView from '../views/HomeView.vue'
 import HardwareProjectsView from '../views/HardwareProjectsView/HardwareProjectsView.vue'
+import STM32SystemOnModuleView from '../views/HardwareProjectsView/STM32SystemOnModuleView.vue'
 import ToolsView from '../views/ToolsView/ToolsView.vue'
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     path: '/hardware-projects',
     name: 'Hardware Projects',
     component: HardwareProjectsView
+  },
+  {
+    path: '/hardware-projects/stm32-system-on-module',
+    name: 'Hardware Projects - STM32 System-on-Module',
+    component: STM32SystemOnModuleView
   },
   {
     path: '/tools',
