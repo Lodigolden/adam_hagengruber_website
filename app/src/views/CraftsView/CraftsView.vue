@@ -1,5 +1,5 @@
 <script setup>
-    import ArcadeMachinePicture from './assets/ArcadeMachinePicture.png'
+    import ArcadeMachinePicture from './ArcadeMachine/assets/ArcadeMachinePicture.png'
     import HomeButton from '../../components/HomeButton.vue'
     import TitleCard from '../../components/TitleCard.vue'
 </script>

@@ -1,3 +1,5 @@
+<!-- A tile component that will navigate the user to a new website page. -->
+
 <script setup>
 import { useRouter } from 'vue-router'
 import emptyImage from './assets/empty_image.png'
@@ -19,11 +21,15 @@ const props = defineProps({
 
 const router = useRouter()
 
+/**
+ * Takes the user to the new page.
+ */
 const navigate = () => {
     router.push(props.route)
 }
 </script>
 
+<!------------------------------------------------------------------------------------------------->
 <template>
     <div class="card" @click="navigate">
         <h2 style="color: black">{{ title }}</h2>
@@ -35,6 +41,7 @@ const navigate = () => {
     </div>
 </template>
 
+<!------------------------------------------------------------------------------------------------->
 <style scoped>
 .card {
     border: 1px solid black;

@@ -1,19 +1,26 @@
+<!-- A home button component that will return the user to the main website page. -->
+
 <script setup>
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
+/**
+ * Returns the user to the website homepage.
+ */
 const goHome = () => {
     router.push('/')
 }
 </script>
 
+<!------------------------------------------------------------------------------------------------->
 <template>
     <div class="home-button" @click="goHome">
         <p style="color: black">Home</p>
     </div>
 </template>
 
+<!------------------------------------------------------------------------------------------------->
 <style scoped>
 .home-button {
     text-decoration: none;

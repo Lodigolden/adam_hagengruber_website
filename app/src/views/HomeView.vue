@@ -1,26 +1,39 @@
+<!-- The website main page. -->
+
 <script setup>
-    import CraftsPicture from './assets/crafts.png'
-    import HardwareProjectsPicture from './assets/op_amp.png'
+    // Components
     import TitleCard from '../components/TitleCard.vue'
-    import ToolsPicture from './assets/tools.png'
+
+    // Assets
+    import CraftsPicture from './CraftsView/assets/crafts.png'
+    import HardwareProjectsPicture from './HardwareProjectsView/assets/HardwareProjectsPicture.png'
+    import ToolsPicture from './ToolsView/assets/tools.png'
 </script>
 
+<!------------------------------------------------------------------------------------------------->
 <template>
     <div>
         <h1 style="text-align: center">Adam's Website</h1>
     </div>
+    
     <div className="grid-container">
-        <TitleCard title="About" route="/about" />
+        <TitleCard
+            title="About" 
+            route="/about"
+        />
+
         <TitleCard
             title="Hardware Projects"
             :coverImage=HardwareProjectsPicture
             route="/hardware-projects"
         />
+
         <TitleCard
             title="Tools"
             :coverImage=ToolsPicture
             route="/tools"
         />
+
         <TitleCard
             title="Crafts"
             :coverImage="CraftsPicture"

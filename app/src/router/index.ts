@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import AboutView from '../views/AboutView.vue'
-import ArcadeMachineView from '../views/CraftsView/ArcadeMachineView.vue'
+// Top Level Views
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView/AboutView.vue'
+
+// Craft Views
 import CraftsView from '../views/CraftsView/CraftsView.vue'
-import HomeView from '../views/HomeView.vue'
+import ArcadeMachineView from '@/views/CraftsView/ArcadeMachine/ArcadeMachineView.vue'
+
+// Hardware Views
 import HardwareProjectsView from '../views/HardwareProjectsView/HardwareProjectsView.vue'
-import STM32SystemOnModuleView from '../views/HardwareProjectsView/STM32SystemOnModuleView.vue'
+import STM32SystemOnModuleView from '@/views/HardwareProjectsView/STM32_SoM/STM32SystemOnModuleView.vue'
+
+// Tools Views
 import ToolsView from '../views/ToolsView/ToolsView.vue'
 
 const routes = [
