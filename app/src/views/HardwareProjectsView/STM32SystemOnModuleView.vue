@@ -9,7 +9,10 @@
     </div>
     <p>
         I wanted to design a board that contains all the necessary components to run a system,
-        abstracting the complex routing and bring-up from the end user. 
+        abstracting the complex routing and bring-up from the end user. The system-on-module seemed
+        like a great way to do that, because I could pack a lot of processing power into a reusable
+        interface and build a simple device tree using the Zephyr RTOS that would enable a user to
+        quickly start developing.
     </p>
 </template>
 

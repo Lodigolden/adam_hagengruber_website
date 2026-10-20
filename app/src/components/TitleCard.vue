@@ -1,7 +1,22 @@
 <script setup>
 import { useRouter } from 'vue-router'
+import emptyImage from './assets/empty_image.png'
 
-const props = defineProps(['title', 'route'])
+const props = defineProps({
+    title: {
+        type: String,
+        default: 'Title'
+    },
+    coverImage: {
+        type: String,
+        default: emptyImage
+    },
+    route: {
+        type: [String, Object],
+        default: '/'
+    }
+})
+
 const router = useRouter()
 
 const navigate = () => {
@@ -12,6 +27,11 @@ const navigate = () => {
 <template>
     <div class="card" @click="navigate">
         <h2 style="color: black">{{ title }}</h2>
+        <img
+            :src=coverImage
+            :alt="props.title"
+            class="card-img"
+        />
     </div>
 </template>
 
@@ -22,8 +42,15 @@ const navigate = () => {
     background-color: #feda6a;
     overflow: hidden;
     width: 250px;
+    height: 250px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .card:hover {

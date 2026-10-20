@@ -5,5 +5,10 @@
 
 <template>
     <HomeButton />
-    <TitleCard title="STM32 System-on-Module" route="/hardware-projects/stm32-system-on-module" />
+    <div className="grid-container">
+        <TitleCard
+            title="STM32 SoM"
+            route="/hardware-projects/stm32-system-on-module"
+        />
+    </div>
 </template>
