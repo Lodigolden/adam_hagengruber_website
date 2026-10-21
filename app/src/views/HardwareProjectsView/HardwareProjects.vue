@@ -3,10 +3,10 @@
 <script setup>
     // Components
     import HomeButton from '@/components/HomeButton.vue'
-    import TitleCard from '../../components/TitleCard.vue'
+    import Card from '@/components/Card.vue'
 
     // Assets
-    import STM32SoMPicture from './STM32_SoM/assets/top.png'
+    import STM32SoMSymbol from './STM32SoMView/assets/BoardTop.png'
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -18,10 +18,10 @@
     </div>
     
     <div className="grid-container">
-        <TitleCard
+        <Card
             title="STM32 SoM"
-            :coverImage=STM32SoMPicture
-            route="/hardware-projects/stm32-system-on-module"
+            :coverImage=STM32SoMSymbol
+            route="/hardware-projects/stm32-som"
         />
     </div>
 </template>

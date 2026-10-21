@@ -6,10 +6,10 @@
     import LinkButton from '@/components/LinkButton.vue'
 
     // Assets
-    import BoardBottom from './assets/bottom.png'
-    import BoardTop from './assets/top.png'
-    import Layout from './assets/layout.png'
-    import Picture from './assets/picture.png'
+    import BoardBottom from './assets/BoardBottom.png'
+    import BoardTop from './assets/BoardTop.png'
+    import PCBLayout from './assets/PCBLayout.png'
+    import Picture from './assets/Picture.png'
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -29,7 +29,7 @@
     </p>
 
     <div className="grid-container-2">
-        <img :src=Layout class="resized-image" />
+        <img :src=PCBLayout class="resized-image" />
         <img :src=BoardTop class="resized-image" />
         <img :src=BoardBottom class="resized-image" />
         <img :src=Picture class="resized-image" />

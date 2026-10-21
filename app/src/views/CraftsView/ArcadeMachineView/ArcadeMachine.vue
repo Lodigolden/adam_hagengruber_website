@@ -5,7 +5,7 @@
     import HomeButton from '@/components/HomeButton.vue'
 
     // Assets
-    import DaneArcadeMachine from './assets/arcade_machine_dane.jpg'
+    import ArcadeMachineDane from './assets/ArcadeMachineDane.jpg'
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -26,7 +26,7 @@
     </p>
 
     <img 
-        :src=DaneArcadeMachine
+        :src=ArcadeMachineDane
         class="resized-image"
     />
 
@@ -38,11 +38,11 @@
 
 <!------------------------------------------------------------------------------------------------->
 <style scoped>
-.resized-image {
-    display: flex;
-    max-width: 300px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
+    .resized-image {
+        display: flex;
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
 </style>

@@ -1,0 +1,44 @@
+<!-- The website main page. -->
+
+<script setup>
+    // Components
+    import Card from '@/components/Card.vue'
+
+    // Assets
+    import CraftsSymbol from '@/views/CraftsView/assets/CraftsSymbol.png'
+    import HardwareProjectsSymbol from '@/views/HardwareProjectsView/assets/HardwareProjectsSymbol.png'
+</script>
+
+<!------------------------------------------------------------------------------------------------->
+<template>
+    <h1 style="text-align: center">Adam's Website</h1>
+
+    <div className="grid-container">
+        <Card
+            title="About"
+            route="/about"
+        />
+
+        <Card
+            title="Hardware Projects"
+            :coverImage=HardwareProjectsSymbol
+            route="/hardware-projects"
+        />
+
+        <Card
+            title="Crafts"
+            :coverImage=CraftsSymbol
+            route="/crafts"
+        />
+    </div>
+</template>
+
+<!------------------------------------------------------------------------------------------------->
+<style scoped>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
+    }
+</style>
