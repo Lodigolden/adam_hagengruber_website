@@ -38,7 +38,6 @@ const props = defineProps({
     background-color: #feda6a;
     border: 1px solid black;
     border-radius: 8px;
-    cursor: default;
     width: 80px;
     cursor: pointer;
 }

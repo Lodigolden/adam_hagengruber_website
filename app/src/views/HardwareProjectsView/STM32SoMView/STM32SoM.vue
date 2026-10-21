@@ -28,7 +28,7 @@
         quickly start developing.
     </p>
 
-    <div className="grid-container-2">
+    <div className="grid-container">
         <img :src=PCBLayout class="resized-image" />
         <img :src=BoardTop class="resized-image" />
         <img :src=BoardBottom class="resized-image" />
@@ -56,16 +56,22 @@
         websiteURL="https://github.com/Lodigolden/stm32_system_on_module"
     />
 
-    <p></p>>
+    <p></p>
 </template>
 
 <!------------------------------------------------------------------------------------------------->
 <style scoped>
-.resized-image {
-    display: flex;
-    max-width: 300px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
+    .resized-image {
+        display: flex;
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
+    }
 </style>

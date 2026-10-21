@@ -12,6 +12,9 @@
 <!------------------------------------------------------------------------------------------------->
 <template>
     <HomeButton />
+
+    <h1 style="text-align: center">Crafts</h1>
+
     <div className="grid-container">
         <Card
             title="Arcade Machine"
@@ -19,4 +22,5 @@
             route="/crafts/arcade-machine"
         />
     </div>
+
 </template>

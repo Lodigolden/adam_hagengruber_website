@@ -15,17 +15,3 @@ h1 {
 h2 {
     color: #d4d4dc;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1.0fr));
-    gap: 2.0rem;
-    place-items: center;
-}
-
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1.0fr));
-    gap: 2.0rem;
-    place-items: center;
-}

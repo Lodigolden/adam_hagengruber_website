@@ -25,10 +25,9 @@
         out really cool!
     </p>
 
-    <img 
-        :src=ArcadeMachineDane
-        class="resized-image"
-    />
+    <div className="grid-container">
+        <img :src=ArcadeMachineDane class="resized-image" />
+    </div>
 
     <p>
         We're still planning to paint the arcade machine, and add a few extra features, so I'll
@@ -44,5 +43,11 @@
         height: auto;
         justify-content: center;
         align-items: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
     }
 </style>

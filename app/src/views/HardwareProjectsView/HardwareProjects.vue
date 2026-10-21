@@ -13,9 +13,7 @@
 <template>
     <HomeButton />
 
-    <div>
-        <h1 style="text-align: center">Hardware Projects</h1>
-    </div>
+    <h1 style="text-align: center">Hardware Projects</h1>
     
     <div className="grid-container">
         <Card
@@ -25,3 +23,15 @@
         />
     </div>
 </template>
+
+<!------------------------------------------------------------------------------------------------->
+<style scoped>
+    .resized-image {
+        display: flex;
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
