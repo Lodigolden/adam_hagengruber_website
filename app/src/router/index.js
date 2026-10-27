@@ -1,8 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Top Level Views
-import AboutView from '@/views/AboutView/About.vue'
+// Top Level View
 import HomeView from '@/views/Home.vue'
+
+// About Views
+import AboutView from '@/views/AboutView/About.vue'
+import ResumeView from '@/views/AboutView/ResumeView/Resume.vue'
+import WebsiteView from '@/views/AboutView/WebsiteView/Website.vue'
 
 // Craft Views
 import CraftsView from '@/views/CraftsView/Crafts.vue'
@@ -13,6 +17,9 @@ import HardwareProjectsView from '@/views/HardwareProjectsView/HardwareProjects.
 import BusinessCardView from '@/views/HardwareProjectsView/BusinessCardView/BusinessCard.vue'
 import STM32SoMView from '@/views/HardwareProjectsView/STM32SoMView/STM32SoM.vue'
 
+// Tools View
+import ToolsView from '@/views/ToolsView/Tools.vue'
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 const routes = [
   // Top Level Views
@@ -21,10 +28,22 @@ const routes = [
     name: 'Home',
     component: HomeView
   },
+
+  // About Views
   {
     path: '/about',
     name: 'About',
     component: AboutView
+  },
+  {
+    path: '/about/resume',
+    name: 'About - Resume',
+    component: ResumeView
+  },
+  {
+    path: '/about/website',
+    name: 'About - Website',
+    component: WebsiteView
   },
 
   // Craft Views
@@ -54,6 +73,13 @@ const routes = [
     path: '/hardware-projects/business-card',
     name: 'Hardware Projects - Business Card',
     component: BusinessCardView
+  },
+
+  // Tools Views
+  {
+    path: '/tools',
+    name: 'Tools',
+    component: ToolsView
   },
 ]
 

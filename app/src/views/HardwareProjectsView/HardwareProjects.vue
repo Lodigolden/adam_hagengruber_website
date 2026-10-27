@@ -43,12 +43,5 @@
         gap: 2.0rem;
         place-items: center;
     }
-    .resized-image {
-        display: flex;
-        max-width: 300px;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
 </style>
 

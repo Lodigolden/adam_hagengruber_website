@@ -27,9 +27,7 @@
 <template>
     <HomeButton title="Back" path="/hardware-projects" />
     
-    <div>
-        <h1 style="text-align: center">STM32 System-on-Module</h1>
-    </div>
+    <h1 style="text-align: center">STM32 System-on-Module</h1>
 
     <p>
         I wanted to design a board that contains all the necessary components to run a system,

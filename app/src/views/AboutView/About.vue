@@ -2,10 +2,14 @@
 
 <script setup>
     // Components
+    import Card from '@/components/Card.vue'
     import HomeButton from '@/components/HomeButton.vue'
 
     // Assets
     import CougarPicture from './assets/Cougarhead.jpg'
+    import ResumeSymbol from './ResumeView/assets/ResumeSymbol.png'
+    import SELPicture from './assets/SELPicture.png'
+    import WebsiteSymbol from './WebsiteView/assets/WebsiteSymbol.png'
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -43,16 +47,25 @@
         worked on several awesome projects since then.
     </p>
 
-    <h1 style="text-align: center">This Website</h1>
-        
-    <p>
-        I built this website as a way to showcase some of the projects I've worked on. I'm
-        obsessed with building things and learning new things in the process! It should be
-        noted that I'm a hardware guy, not a frontend developer (if my weird design choices
-        didn't already show that). But it seemed fun to get some front-end experience, and I
-        have a few future projects in mind that could benefit from the practice, so I thought
-        why not?
-    </p>
+    <div className="grid-container">
+        <img :src=SELPicture class="resized-image" />
+    </div>
+
+    <p></p>
+
+    <div className="grid-container-card">
+        <Card
+            title="This Website"
+            :coverImage=WebsiteSymbol
+            route="/about/website"
+        />
+
+        <Card
+            title="Resume"
+            :coverImage=ResumeSymbol
+            route="/about/resume"
+        />
+    </div>
 </template>
 
 <!------------------------------------------------------------------------------------------------->
@@ -67,6 +80,12 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
+    }
+    .grid-container-card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1.0fr));
         gap: 2.0rem;
         place-items: center;
     }
