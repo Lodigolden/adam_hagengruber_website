@@ -15,6 +15,11 @@
 
     <h1 style="text-align: center">Crafts</h1>
 
+    <p style="text-align: center">
+        A collection of random stuff I've made that doesn't have much to do with hardware or
+        software, but was just fun to build.
+    </p>
+
     <div className="grid-container">
         <Card
             title="Arcade Machine"

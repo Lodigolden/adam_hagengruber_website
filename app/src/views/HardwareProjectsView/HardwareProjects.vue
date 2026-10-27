@@ -15,7 +15,7 @@
 
     <h1 style="text-align: center">Hardware Projects</h1>
 
-    <p class="center-text">
+    <p style="text-align: center">
         A collection of hardware projects I've finished. Each project contains a link to my Github,
         where I've open-sourced the project. Some of these projects also include firmware, but if
         the project has any hardware component it's stored here.
@@ -49,9 +49,6 @@
         height: auto;
         justify-content: center;
         align-items: center;
-    }
-    .center-text {
-        text-align: center;
     }
 </style>
 

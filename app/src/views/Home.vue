@@ -3,6 +3,7 @@
 <script setup>
     // Components
     import Card from '@/components/Card.vue'
+    import LinkButton from '@/components/LinkButton.vue'
 
     // Assets
     import CraftsSymbol from '@/views/CraftsView/assets/CraftsSymbol.png'
@@ -31,6 +32,16 @@
             route="/crafts"
         />
     </div>
+
+    <LinkButton
+        title="GitHub"
+        websiteURL="https://github.com/Lodigolden"
+    />
+
+    <LinkButton
+        title="LinkedIn"
+        websiteURL="https://www.linkedin.com/in/adam-hagengruber-aa1940196"
+    />
 </template>
 
 <!------------------------------------------------------------------------------------------------->
