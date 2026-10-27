@@ -12,13 +12,17 @@ import WebsiteView from '@/views/AboutView/WebsiteView/Website.vue'
 import CraftsView from '@/views/CraftsView/Crafts.vue'
 import ArcadeMachineView from '@/views/CraftsView/ArcadeMachineView/ArcadeMachine.vue'
 
-// Hardware Views
+// Hardware Projects Views
 import HardwareProjectsView from '@/views/HardwareProjectsView/HardwareProjects.vue'
 import BusinessCardView from '@/views/HardwareProjectsView/BusinessCardView/BusinessCard.vue'
 import STM32SoMView from '@/views/HardwareProjectsView/STM32SoMView/STM32SoM.vue'
 
 // Tools View
 import ToolsView from '@/views/ToolsView/Tools.vue'
+import DevoView from '@/views/ToolsView/DevoView/Devo.vue'
+
+// Software Projects Views
+import SoftwareProjectsView from '@/views/SoftwareProjectsView/SoftwareProjects.vue'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 const routes = [
@@ -81,6 +85,18 @@ const routes = [
     name: 'Tools',
     component: ToolsView
   },
+  {
+    path: '/tools/devo',
+    name: 'Tools - Devo',
+    component: DevoView
+  },
+
+  // Software Projects
+  {
+    path: '/software-projects',
+    name: 'Software Projects',
+    component: SoftwareProjectsView
+  }
 ]
 
 const router = createRouter({

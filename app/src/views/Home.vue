@@ -8,6 +8,7 @@
     // Assets
     import CraftsSymbol from '@/views/CraftsView/assets/CraftsSymbol.png'
     import HardwareProjectsSymbol from '@/views/HardwareProjectsView/assets/HardwareProjectsSymbol.png'
+    import SoftwareProjectsSymbol from '@/views/SoftwareProjectsView/assets/SoftwareProjectsSymbol.png'
     import ToolsSymbol from '@/views/ToolsView/assets/ToolsSymbol.png'
 </script>
 
@@ -41,6 +42,8 @@
 
         <Card
             title="Software Projects"
+            :coverImage=SoftwareProjectsSymbol
+            route="/software-projects"
         />
     </div>
 

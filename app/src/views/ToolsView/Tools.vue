@@ -19,6 +19,7 @@
     <div className="grid-container">
         <Card
             title="Devo"
+            route="/tools/devo"
         />
     </div>
 </template>
