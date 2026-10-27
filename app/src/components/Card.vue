@@ -1,32 +1,34 @@
 <!-- A tile component that will navigate the user to a new website page. -->
 
 <script setup>
-import { useRouter } from 'vue-router'
-import emptyImage from './assets/empty_image.png'
+    // Components
+    import { useRouter } from 'vue-router'
+    import emptyImage from './assets/empty_image.png'
 
-const props = defineProps({
-    title: {
-        type: String,
-        default: 'Title'
-    },
-    coverImage: {
-        type: String,
-        default: emptyImage
-    },
-    route: {
-        type: [String, Object],
-        default: '/'
+    // Props
+    const props = defineProps({
+        title: {
+            type: String,
+            default: 'Title'
+        },
+        coverImage: {
+            type: String,
+            default: emptyImage
+        },
+        route: {
+            type: [String, Object],
+            default: '/'
+        }
+    })
+
+    const router = useRouter()
+
+    /**
+     * Takes the user to the new page.
+     */
+    const navigate = () => {
+        router.push(props.route)
     }
-})
-
-const router = useRouter()
-
-/**
- * Takes the user to the new page.
- */
-const navigate = () => {
-    router.push(props.route)
-}
 </script>
 
 <!------------------------------------------------------------------------------------------------->

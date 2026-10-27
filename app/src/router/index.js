@@ -10,6 +10,7 @@ import ArcadeMachineView from '@/views/CraftsView/ArcadeMachineView/ArcadeMachin
 
 // Hardware Views
 import HardwareProjectsView from '@/views/HardwareProjectsView/HardwareProjects.vue'
+import BusinessCardView from '@/views/HardwareProjectsView/BusinessCardView/BusinessCard.vue'
 import STM32SoMView from '@/views/HardwareProjectsView/STM32SoMView/STM32SoM.vue'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48,6 +49,11 @@ const routes = [
     path: '/hardware-projects/stm32-som',
     name: 'Hardware Projects - STM32 SoM',
     component: STM32SoMView
+  },
+  {
+    path: '/hardware-projects/business-card',
+    name: 'Hardware Projects - Business Card',
+    component: BusinessCardView
   },
 ]
 

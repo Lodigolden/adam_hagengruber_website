@@ -1,7 +1,11 @@
 <!-- A page with personal information. -->
 
 <script setup>
+    // Components
     import HomeButton from '@/components/HomeButton.vue'
+
+    // Assets
+    import CougarPicture from './assets/Cougarhead.jpg'
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -26,8 +30,17 @@
         up an Arduino off Amazon and start building something new.
     </p>
 
+    <div className="grid-container">
+        <img :src=CougarPicture class="resized-image" />
+    </div>
+
     <p>
-        Test
+        During undergrad, I interned at Schweitzer Engineering Laboratories (SEL) as an automation
+        engineer in engineering services, writing PLC code and designing HMIs. After graduating,
+        I joined SEL's engineering rotation program, spending 6 months a piece in 3 different divisions
+        of the company: manufacturing test, R&D hardware engineering, and R&D firmware engineering.
+        After graduating the program, I joined the hardware team I'd done a rotation with, and have
+        worked on several awesome projects since then.
     </p>
 
     <h1 style="text-align: center">This Website</h1>
@@ -41,3 +54,20 @@
         why not?
     </p>
 </template>
+
+<!------------------------------------------------------------------------------------------------->
+<style scoped>
+    .resized-image {
+        display: flex;
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
+    }
+</style>

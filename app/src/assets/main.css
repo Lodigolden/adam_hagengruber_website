@@ -15,3 +15,10 @@ h1 {
 h2 {
     color: #d4d4dc;
 }
+
+html {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

@@ -4,17 +4,28 @@
     // Components
     import HomeButton from '@/components/HomeButton.vue'
     import LinkButton from '@/components/LinkButton.vue'
+    import PDFViewer from '@/components/PdfViewer.vue'
+    import PictureCarousel from '@/components/PictureCarousel.vue'
 
     // Assets
     import BoardBottom from './assets/BoardBottom.png'
     import BoardTop from './assets/BoardTop.png'
     import PCBLayout from './assets/PCBLayout.png'
     import Picture from './assets/Picture.png'
+
+    const images = [
+        BoardBottom,
+        BoardTop,
+        PCBLayout,
+        Picture
+    ]
+
+    import schematic from './assets/STM32SoMSchematic.pdf' // TODO
 </script>
 
 <!------------------------------------------------------------------------------------------------->
 <template>
-    <HomeButton />
+    <HomeButton title="Back" path="/hardware-projects" />
     
     <div>
         <h1 style="text-align: center">STM32 System-on-Module</h1>
@@ -28,12 +39,7 @@
         quickly start developing.
     </p>
 
-    <div className="grid-container">
-        <img :src=PCBLayout class="resized-image" />
-        <img :src=BoardTop class="resized-image" />
-        <img :src=BoardBottom class="resized-image" />
-        <img :src=Picture class="resized-image" />
-    </div>
+    <PictureCarousel :images="images" />
 
     <p>
         The most challenging part of this project was the PCB layout. The board is only about 1.5" x
@@ -58,20 +64,3 @@
 
     <p></p>
 </template>
-
-<!------------------------------------------------------------------------------------------------->
-<style scoped>
-    .resized-image {
-        display: flex;
-        max-width: 300px;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(250px, 1.0fr));
-        gap: 2.0rem;
-        place-items: center;
-    }
-</style>

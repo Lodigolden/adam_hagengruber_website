@@ -24,3 +24,13 @@
     </div>
 
 </template>
+
+<!------------------------------------------------------------------------------------------------->
+<style scoped>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 1.0fr));
+        gap: 2.0rem;
+        place-items: center;
+    }
+</style>

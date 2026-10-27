@@ -3,14 +3,19 @@
 <script setup>
     // Components
     import HomeButton from '@/components/HomeButton.vue'
+    import PictureCarousel from '@/components/PictureCarousel.vue'
 
     // Assets
     import ArcadeMachineDane from './assets/ArcadeMachineDane.jpg'
+
+    const images = [
+        ArcadeMachineDane
+    ]
 </script>
 
 <!------------------------------------------------------------------------------------------------->
 <template>
-    <HomeButton />
+    <HomeButton title="Back" path="/crafts" />
 
     <h1 style="text-align: center">Arcade Machine</h1>
 

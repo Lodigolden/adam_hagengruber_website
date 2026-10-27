@@ -1,22 +1,35 @@
 <!-- A home button component that will return the user to the main website page. -->
 
 <script setup>
-import { useRouter } from 'vue-router'
+    // Components
+    import { useRouter } from 'vue-router'
 
-const router = useRouter()
+    // Props
+    const props = defineProps({
+        title: {
+            type: String,
+            default: 'Home'
+        },
+        path: {
+            type: String,
+            default: '/'
+        }
+    })
 
-/**
- * Returns the user to the website homepage.
- */
-const goHome = () => {
-    router.push('/')
-}
+    const router = useRouter()
+
+    /**
+     * Returns the user to the website homepage.
+     */
+    const goHome = () => {
+        router.push(props.path)
+    }
 </script>
 
 <!------------------------------------------------------------------------------------------------->
 <template>
     <div class="home-button" @click="goHome">
-        <p style="color: black">Home</p>
+        <p style="color: black">{{ props.title }}</p>
     </div>
 </template>
 
