@@ -6,6 +6,7 @@
     import Card from '@/components/Card.vue'
 
     // Assets
+    import BusinessCardSymbol from './BusinessCardView/assets/BoardBottom.png'
     import STM32SoMSymbol from './STM32SoMView/assets/BoardTop.png'
 </script>
 
@@ -30,6 +31,7 @@
 
         <Card
             title="Business Card"
+            :coverImage=BusinessCardSymbol
             route="/hardware-projects/business-card"
         />
     </div>

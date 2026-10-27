@@ -4,6 +4,18 @@
     // Components
     import HomeButton from '@/components/HomeButton.vue'
     import LinkButton from '@/components/LinkButton.vue'
+    import PictureCarousel from '@/components/PictureCarousel.vue'
+
+    // Assets
+    import BoardBottom from './assets/BoardBottom.png'
+    import BoardTop from './assets/BoardTop.png'
+    import PCBLayout from './assets/PCBLayout.png'
+
+    const images = [
+        BoardBottom,
+        BoardTop,
+        PCBLayout
+    ]
 </script>
 
 <!------------------------------------------------------------------------------------------------->
@@ -18,6 +30,8 @@
         also have some sort of function for the user. I settled on a card that could work as either
         a clock or a thermometer.
     </p>
+
+    <PictureCarousel :images="images" />
 
     <LinkButton
         title="GitHub"
